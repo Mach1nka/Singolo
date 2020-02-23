@@ -1,0 +1,11 @@
+* {
+  margin: 0;
+}
+body {
+  max-width: 1020px;
+}
+
+.portfolio{
+  background-color: #2d303a;
+  height: 864px;
+}
