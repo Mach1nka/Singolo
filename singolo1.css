@@ -89,7 +89,6 @@ h1,h2,h3,h4,h5,h6{font-family:'Lato Black', sans-serif}
   align-items: center;
 }
 .slider__block_phones{
-  position: relative;
   display: flex;
   width: 800px;
   justify-content: space-between;
@@ -103,6 +102,7 @@ h1,h2,h3,h4,h5,h6{font-family:'Lato Black', sans-serif}
 }
 
 .horizontal_phone{
+  position: relative;
   margin-right: 1px;
   margin-top: 1px;
 }
@@ -111,10 +111,11 @@ h1,h2,h3,h4,h5,h6{font-family:'Lato Black', sans-serif}
   background-image: url('assets/img/Blue.png');
   width: 339px;
   height: 194px;
-  right: 89px;
-  bottom: 161px;
+  right: 88px;
+  bottom: 41px;
 }
 .vertical_phone{
+  position: relative;
   margin-left: 2px;
 }
 .yellow{
@@ -123,7 +124,7 @@ h1,h2,h3,h4,h5,h6{font-family:'Lato Black', sans-serif}
   width: 194px;
   height: 339px;
   bottom: 86px;
-  left: 13px;
+  left: 11px;
 }
 
 .chev_right{
