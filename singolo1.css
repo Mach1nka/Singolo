@@ -167,8 +167,8 @@ h1,h2,h3,h4,h5,h6{font-family:'Lato Black', sans-serif}
   letter-spacing: -0.25px;
   word-spacing: 0.65px;
 }
-.our_services__describe{
-  font-family: "Lato Light", sans-serif;
+.our_services__description{
+  font-family: 'Lato Light', sans-serif;
   padding-top: 17px;
   padding-right: 40px;
   padding-left: 40px;
