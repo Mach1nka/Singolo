@@ -1,3 +1,4 @@
+
 * {
   margin: 0;
   padding: 0;
@@ -22,6 +23,7 @@ button[type=button]{
   border: 1px solid #666d89;
   border-radius: 5px;
   padding: 2px 7px 3px 7px;
+  letter-spacing: -0.2px;;
   margin-right: 5.5px;
   cursor: pointer;
 }
@@ -60,12 +62,13 @@ button[type=button]:hover{
   padding-top: 19px;
   display: flex;
   flex-wrap: wrap;
+  height:601px;
+  overflow: hidden;
 }
 
 .portfolio__block_arts>img{
   display: block;
   padding: 20px 10px 0 10px;
-  overflow: hidden;
 }
 
 .about_us{
@@ -94,6 +97,7 @@ button[type=button]:hover{
   max-width: 300px;
   margin: 0 10px 0 10px;
 }
+.about_us__article_member:nth-child(2){margin-left: 9px;}
 .about_us__article_member >img{
   width: 300px;
   height: 300px;
@@ -101,7 +105,7 @@ button[type=button]:hover{
 .about_us__article_member>h3{
   margin-top: 11px;
   letter-spacing: -0.14px;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   font-size: 18px;
   color: #666d89;
   font-family: 'Lato Black',sans-serif;
@@ -112,10 +116,10 @@ button[type=button]:hover{
   font-size: 12px;
   word-spacing: -0.2px;
   line-height: 21.56px;
-  font-family: 'Lano Regular', sans-serif;
+  font-family: 'Lato Regular', sans-serif;
 }
 .social-media{
-  margin-top: 22px;
+  margin-top: 24px;
   margin-left: 1px;
 }
 .social-media>a{
@@ -135,6 +139,5 @@ button[type=button]:hover{
   margin-bottom: 1px;
 }
 .social-media>a:hover{
-  background-color: #666d89;
-  /*реализовать hover*/
+  filter: brightness(0);
 }
