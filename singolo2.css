@@ -32,6 +32,7 @@ button[type=button]:hover{
   background-color: #2d303a;
   border: 1px solid #c5c5c5;
 }
+h1,h2,h3,h4,h5,h6{font-family:'Lato Black', sans-serif}
 .portfolio__block_arts>img:nth-child(-n+4){padding-top: 0px;}
 
 
@@ -46,7 +47,6 @@ button[type=button]:hover{
 .portfolio__header_head{
   font-size: 30px;
   color: #666d89;
-  font-family: 'Lato Black',sans-serif;
   padding: 60px 10px 0 10px;
   letter-spacing: -0.2px;
 }
@@ -84,7 +84,6 @@ button[type=button]:hover{
 .about_us__header_head{
   font-size: 30px;
   color: #666d89;
-  font-family: 'Lato Black',sans-serif;
   padding: 59px 10px 0 10px;
   letter-spacing: -0.2px;
 }
@@ -112,7 +111,6 @@ button[type=button]:hover{
   margin-bottom: 8px;
   font-size: 18px;
   color: #666d89;
-  font-family: 'Lato Black',sans-serif;
   overflow: hidden;
   white-space: nowrap;
 }
@@ -139,10 +137,10 @@ button[type=button]:hover{
   border: 1px solid #69708b;
   border-radius: 50%;
 }
-.social-media img[alt='facebook']{
+.social-media img[alt=facebook]{
   margin-left: 3px;
 }
-.social-media img[alt='twitter']{
+.social-media img[alt=twitter]{
   margin-bottom: 1px;
 }
 .social-media>a:hover{
