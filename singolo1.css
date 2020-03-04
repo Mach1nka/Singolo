@@ -73,7 +73,7 @@ h1,h2,h3,h4,h5,h6{font-family:'Lato Black', sans-serif}
 }
 .navbar__item:hover{color: #f06c64;}
 
-/*MAIN*/
+
 .slider__block{
   height: 594px;
   border-bottom: 6px solid #ea676b;
@@ -147,7 +147,7 @@ h1,h2,h3,h4,h5,h6{font-family:'Lato Black', sans-serif}
   padding-left: 5px;
 }
 
-/*out srvices*/
+
 .our_services{
   background-color: #f2f2f2;
   border-bottom: #fff;
@@ -241,3 +241,4 @@ h1,h2,h3,h4,h5,h6{font-family:'Lato Black', sans-serif}
 .star>img{
   margin: 12px 11px 12px 12px;
 }
+/*SINGOLO 1*/
