@@ -680,8 +680,8 @@ footer{
   background-color: #f2f2f2;
   border: 6px solid  #f2f2f2;
   border-radius: 6px;
-  text-align: center;
   overflow: hidden;
+  text-align: center;
 }
 input[value=OK]{
   width: 25%;
@@ -703,6 +703,6 @@ input[value=OK]{
   font-family: "Lato Regular",sans-serif;
   margin-top: 20px;
   width: 60%;
-  text-overflow: ellipsis;
   white-space: nowrap;
+  text-align: left;
 }

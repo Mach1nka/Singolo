@@ -156,5 +156,9 @@ document.querySelector("#modal_button").onclick = function () {
   for (let i = 0; i < document.querySelector('.container').children.length; i++) {
     document.querySelector('.container').children[i].innerHTML = '';
   }
+  document.getElementById('name').value = '';
+  document.getElementById("email").value = '';
+  document.getElementById("subject").value = '';
+  document.getElementById("describe").value = '';
   document.querySelector('.modal-window').style.display = 'none';
 }
