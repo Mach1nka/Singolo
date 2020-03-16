@@ -9,40 +9,51 @@
   <link rel="stylesheet" href="fonts.css">
 </head>
 <body>
-  <header class="header">
+  <header class="header" id="home">
     <div class="header__wrap">
       <h1 class="header__logo">Singolo<span class="red star">*</span></h1>
       <nav class="header__navbar">
           <a href="#"  class="navbar__item">home</a>
-          <a href="#" class="navbar__item">services</a>
-          <a href="#" class="navbar__item">portfolio</a>
-          <a href="#" class="navbar__item">about</a>
-          <a href="#" class="navbar__item">contact</a>
+          <a href="#services" class="navbar__item">services</a>
+          <a href="#portfolio" class="navbar__item">portfolio</a>
+          <a href="#about" class="navbar__item">about</a>
+          <a href="#contact" class="navbar__item">contact</a>
       </nav>
     </div>
   </header>
   <main>
     <div class="slider__block">
       <section class="slider__block_img">
-        <div class="chev_left active">
-            <a href="#"><img src="assets/img/chev_left.png" alt="iPhone"></a>
+        <div class="chev_left chev">
+            <img src="assets/img/chev_left.png" alt="iPhone">
         </div>
-        <div class="slider__block_phones">
-          <div class="vertical_phone">
-            <img class="iphone_vertical" src="assets/img/iPhone_Vertical.png" alt="iPhone">
-            <div class="yellow"></div>
+        <div class="corusel">
+          <div class="item active">
+            <div class="slider__block_phones">
+               <div class="vertical_phone">
+                <img class="iphone_vertical" src="assets/img/iPhone_Vertical.png" alt="iPhone">
+                <div id="vertPhone" class="yellow"></div>
+              </div>
+              <div class="horizontal_phone">
+                <img class="iphone_horizontal" src="assets/img/iPhone_Horizontal.png" alt="iPhone">
+                <div id="horizPhone" class="blue"></div>
+              </div>
+            </div>
           </div>
-          <div class="horizontal_phone">
-            <img class="iphone_horizontal" src="assets/img/iPhone_Horizontal.png" alt="iPhone">
-            <div class="blue"></div>
+          <div class="item ">
+            <div class="slider__block_second_phones">
+             <img src="assets/img/phone-vertical-small.png" alt="phone-left">
+             <img src="assets/img/phone-vertical-big.png" alt="phone">
+             <img src="assets/img/phone-vertical-small.png" alt="phone-right">
+           </div>
           </div>
         </div>
-        <div class="chev_right active">
-          <a  href="#"><img src="assets/img/chev_right.png" alt="iPhone"></a>
+        <div class="chev_right chev">
+          <img src="assets/img/chev_right.png" alt="iPhone">
         </div>
       </section>
-    </div>
-    <div class="our_services">
+  </div>
+    <div class="our_services" id="services">
       <h2 class="our_services__head">Our Services</h2>
       <p class="our_services__description">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
       <section class="our_services__wrap">
@@ -96,7 +107,7 @@
         </section>
       </section>
     </div>
-    <div class="portfolio">
+    <div class="portfolio" id="portfolio">
       <div class="portfolio__header">
         <h2 class="portfolio__header_head">Portfolio</h2>
         <p class="portfolio__header_description">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
@@ -108,22 +119,21 @@
         </div>
       </div>
       <section class="portfolio__block_arts">
-        <img src="assets/img/Image.png" alt="Some img">
-        <img src="assets/img/Image-3.png" alt="Some img">
-        <img src="assets/img/Image-6.png" alt="Some img">
-        <img src="assets/img/Image-9.png" alt="Some img">
-        <img src="assets/img/Image-1.png" alt="Some img">
-        <img src="assets/img/Image-4.png" alt="Some img">
-        <img src="assets/img/Image-7.png" alt="Some img">
-        <img src="assets/img/Image-10.png" alt="Some img">
-        <img src="assets/img/Image-2.png" alt="Some img">
-        <img src="assets/img/Image-5.png" alt="Some img">
-        <img src="assets/img/Image-8.png" alt="Some img">
-        <img src="assets/img/Image-11.png" alt="Some img">
-        <img src="assets/img/Image-11.png" alt="Some img">
+        <img src="assets/img/Image.png" alt="Some_img">
+        <img src="assets/img/Image-3.png" alt="Some_img">
+        <img src="assets/img/Image-6.png" alt="Some_img">
+        <img src="assets/img/Image-9.png" alt="Some_img">
+        <img src="assets/img/Image-1.png" alt="Some_img">
+        <img src="assets/img/Image-4.png" alt="Some_img">
+        <img src="assets/img/Image-7.png" alt="Some_img">
+        <img src="assets/img/Image-10.png" alt="Some_img">
+        <img src="assets/img/Image-2.png" alt="Some_img">
+        <img src="assets/img/Image-5.png" alt="Some_img">
+        <img src="assets/img/Image-8.png" alt="Some_img">
+        <img src="assets/img/Image-11.png" alt="Some_img">
       </section>
     </div>
-    <div class="about_us">
+    <div class="about_us" id="about">
       <h2 class="about_us__header_head">About Us</h2>
       <p class="about_us__header_description">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
       <section class="about_us__section_team">
@@ -162,16 +172,16 @@
         </article>
       </section>
     </div>
-    <div class="get_a_quote">
+    <div class="get_a_quote" id="contact">
       <h2 class="get_a_quote__head">Get a Quote</h2>
       <p class="get_a_quote__describe">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
       <section class="get_a_quote__form">
         <form method="post">
-          <input type="text" placeholder="Name (Required)" required>
-          <input type="email" placeholder="Email (Required)" required>
-          <input type="text" placeholder="Subject">
-          <textarea placeholder="Describe your project in detail..." maxlength="100"></textarea>
-          <input type="submit" value="SUBMIT">
+          <input type="text" id="name" placeholder="Name (Required)" required>
+          <input type="email" id="email" placeholder="Email (Required)" required>
+          <input type="text" id="subject" placeholder="Subject">
+          <textarea placeholder="Describe your project in detail..." id="describe" maxlength="100"></textarea>
+          <input type="submit" value="SUBMIT" id="submit">
         </form>
         <article class="get_a_quote__contact_inform">
           <h4 class="contact_inform__head">Contact Information</h4>
@@ -203,5 +213,11 @@
       <a href="#"><img src="assets/img/linkedin.svg" alt="linkedin"></a>
     </div>
   </footer>
+  <div class="modal-window">
+    <div class="container">
+      <input type="submit" id="modal_button"  value="OK">
+    </div>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
