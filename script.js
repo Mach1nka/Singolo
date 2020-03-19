@@ -1,7 +1,26 @@
-document.querySelector('.navbar__item').style.color="#f06c64";
+function scroll(event) {
+  let curPosition = window.scrollY;
+  if (curPosition > 120) {
+    document.querySelector('header').style.position= 'fixed';
+  }else document.querySelector('header').style.position= 'relative';
+  document.querySelectorAll('main > div').forEach((item) => {
+      item.getAttribute('id');
+      if (item.offsetTop <= curPosition && (item.offsetTop + item.offsetHeight)> curPosition) {
+        document.querySelectorAll('nav a').forEach((a) =>{
+          a.style.color='';
+          if (item.getAttribute('id') === a.getAttribute('href').substr(1)) {
+            a.style.color='#f06c64';
+          }
+        })
+      }
+  });
+
+}
+document.addEventListener('scroll', scroll);
+
+
 const navbarItemActive  = (event) =>{
   document.querySelectorAll('.navbar__item').forEach(item => item.style.color='');
-  event.target.style.color="#f06c64";
   event.preventDefault();
    let id = event.target.getAttribute('href').substr(1);
    document.getElementById(id).scrollIntoView({
@@ -17,8 +36,8 @@ let items = document.querySelectorAll('.item');
 let activeItem = 0;
 let isEnabled = true;
 
-function changeActiveItem(it) {
-  activeItem = (it + items.length) % items.length;
+function changeActiveItem(itm) {
+  activeItem = (itm + items.length) % items.length;
 }
 function hideItem(direction) {
   isEnabled =false;
@@ -92,17 +111,18 @@ document.querySelector('.horizontal_phone').addEventListener('click',function ()
 });
 
 
-document.querySelector('.portfolio__header_buttons').addEventListener('click', function(event) {
+
+document.querySelectorAll('button[name=button]').forEach(item => item.addEventListener('click',function (event) {
   document.querySelectorAll('button[name=button]').forEach(item => item.classList.remove('focus'));
   event.target.classList.add('focus');
   document.querySelectorAll('img[alt=Some_img]').forEach((item)=> {
-    let arr = [0,1,2,3,4,5,6,7,8,9,10,11];
-    let arrRandom = arr.sort(function() {return Math.random() - 0.5});
-    let i =0;
-    item.style.order = arrRandom[i];
-    i++;
-  })
-});
+      let arr = [0,1,2,3,4,5,6,7,8,9,10,11];
+      let arrRandom = arr.sort(function() {return Math.random() - 0.5});
+      let i =0;
+      item.style.order = arrRandom[i];
+      i++;
+    })
+}));
 
 document.querySelectorAll('img[alt=Some_img]').forEach((item) => {
   item.addEventListener('click', (event) => {
