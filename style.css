@@ -405,6 +405,12 @@ img[alt='phone-right']{
   cursor: pointer;
 }
 
+.focus_image{
+  border: 5px solid #F06C64;
+  width: 210px;
+  height: 177px; 
+}
+
 
 .about_us{
   height: 728px;

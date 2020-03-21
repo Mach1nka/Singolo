@@ -127,14 +127,10 @@ document.querySelectorAll('button[name=button]').forEach(item => item.addEventLi
 document.querySelectorAll('img[alt=Some_img]').forEach((item) => {
   item.addEventListener('click', (event) => {
     document.querySelectorAll('img[alt=Some_img]').forEach((item) => {
-      item.style.border = '';
-      item.style.height = '';
-      item.style.width = '';
+      item.classList.remove('focus_image');
 
     })
-    item.style.border = '5px solid #F06C64';
-    item.style.height = '177px';
-    item.style.width = '210px';
+    item.classList.add('focus_image');
   })
 })
 
