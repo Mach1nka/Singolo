@@ -115,7 +115,7 @@ document.querySelector('.horizontal_phone').addEventListener('click',function ()
 document.querySelectorAll('button[name=button]').forEach(item => item.addEventListener('click',function (event) {
   document.querySelectorAll('button[name=button]').forEach(item => item.classList.remove('focus'));
   event.target.classList.add('focus');
-  document.querySelectorAll('img[alt=Some_img]').forEach((item)=> {
+   document.querySelectorAll('img[alt=Some_img]').forEach((item)=> {
       let arr = [0,1,2,3,4,5,6,7,8,9,10,11];
       let arrRandom = arr.sort(function() {return Math.random() - 0.5});
       let i =0;
