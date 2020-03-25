@@ -439,7 +439,6 @@ img[alt='phone-right']{
   max-width: 300px;
   margin: 0 10px 0 10px;
 }
-.about_us__article_member:nth-child(2){margin-left: 9px;}
 .about_us__article_member >img{
   width: 300px;
   height: 300px;
@@ -715,13 +714,12 @@ input[value=OK]{
 }
 
 /* MEDIA */
-@media(width:768px){.header{width: 768px}}
 @media (min-width:768px) and (max-width:1019px) {
   body{
     width: 100%;
     margin: 0;
   }
-  .header{width: 100%}
+   .header{width: 100%; }
 
   .slider__block{height: 451px;}
   .corusel{
@@ -794,10 +792,15 @@ input[value=OK]{
     width: 206px;
     height: 173px;
   }
+  .about_us{
+    height: auto;
+    overflow-x: hidden;
+    padding-bottom: 4%;
+  }
   .about_us__article_member{
   width: 31%;
-   height: fit-content;
-  margin: 0 1% 0 1%;
+  height: max-content;
+  margin: 0 2% 0 1%;
   }
   .about_us__article_member >img{
     width: 100%;
@@ -805,9 +808,9 @@ input[value=OK]{
   }
 
 
+
   .get_a_quote{height: 625px}
   .get_a_quote__head{padding-top: 7%}
-  /* .get_a_quote__describe{margin-top: 3%} */
 
   form{
     width: 290%;
@@ -817,7 +820,7 @@ input[value=OK]{
     width: 92%;
   }
   textarea{height: 137px}
-  input[type= submit]{width: 99%}
+  input[type= submit]{width: 97%}
   .get_a_quote__contact_inform{margin-top: 3%}
 
   .contact_inform__describe{margin-top: 0}

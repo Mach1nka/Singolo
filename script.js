@@ -138,7 +138,7 @@ let confirm = true;
 let name = document.getElementById('name');
 let email = document.getElementById("email");
 function checkReqiured(name,email) {
-  if (name.value.length <=3 || email.value.length <=5) {
+  if (name.value.length <=5 ||  email.validity.typeMismatch || email.value.length <=5) {
     return  confirm = false;
   }else return confirm = true;
 }
