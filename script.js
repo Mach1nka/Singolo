@@ -24,8 +24,8 @@ function scroll(event) {
         })
       }
   });
-
 }
+
 document.addEventListener('scroll', scroll);
 document.addEventListener('scroll', scrollListen = (event)=>{
   let curPosition = window.scrollY;
