@@ -1,6 +1,16 @@
+function asideBar(event) {
+  event.preventDefault();
+  document.getElementById('hamburger').classList.toggle('rotate')
+  document.getElementById('aside').classList.toggle('hidden');
+}
+document.getElementById('hamburger').addEventListener('click',asideBar);
+
+
+
+///////////////////////
 function scroll(event) {
   let curPosition = window.scrollY;
-  if (curPosition > 120) {
+  if (curPosition > 0) {
     document.querySelector('header').style.position= 'fixed';
   }else document.querySelector('header').style.position= 'relative';
   document.querySelectorAll('main > div').forEach((item) => {
@@ -17,6 +27,32 @@ function scroll(event) {
 
 }
 document.addEventListener('scroll', scroll);
+document.addEventListener('scroll', scrollListen = (event)=>{
+  let curPosition = window.scrollY;
+  document.querySelectorAll('main > div').forEach((item) => {
+      item.getAttribute('id');
+      if (item.offsetTop <= curPosition && (item.offsetTop + item.offsetHeight)> curPosition) {
+        document.querySelectorAll('.aside__item').forEach((a) =>{
+          a.style.color='';
+          if (item.getAttribute('id') === a.getAttribute('href').substr(1)) {
+            a.style.color='#f06c64';
+          }
+        })
+      }
+  })
+});
+
+
+const asideItemActive  = (event) =>{
+  document.querySelectorAll('.aside__item').forEach(item => item.style.color='');
+  event.preventDefault();
+   let id = event.target.getAttribute('href').substr(1);
+   document.getElementById(id).scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    })
+}
+document.querySelector('.aside__menu').addEventListener('click' ,asideItemActive);
 
 
 const navbarItemActive  = (event) =>{
@@ -29,8 +65,7 @@ const navbarItemActive  = (event) =>{
     })
 }
 document.querySelector('.header__navbar').addEventListener('click' ,navbarItemActive);
-
-
+////////////////////////
 //Slider
 let items = document.querySelectorAll('.item');
 let activeItem = 0;
@@ -115,13 +150,11 @@ document.querySelector('.horizontal_phone').addEventListener('click',function ()
 document.querySelectorAll('button[name=button]').forEach(item => item.addEventListener('click',function (event) {
   document.querySelectorAll('button[name=button]').forEach(item => item.classList.remove('focus'));
   event.target.classList.add('focus');
-   document.querySelectorAll('img[alt=Some_img]').forEach((item)=> {
-      let arr = [0,1,2,3,4,5,6,7,8,9,10,11];
-      let arrRandom = arr.sort(function() {return Math.random() - 0.5});
-      let i =0;
-      item.style.order = arrRandom[i];
-      i++;
-    })
+  let parent = document.querySelector('.portfolio__block_arts');
+  let imges =  document.querySelectorAll('.portfolio__block_arts>img');
+  for (let i = imges.length - 2; i >= 0; i--) {
+    parent.appendChild(imges[i]);
+  }
 }));
 
 document.querySelectorAll('img[alt=Some_img]').forEach((item) => {
