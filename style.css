@@ -1017,8 +1017,8 @@ input[value=OK]{
     margin: 7px 6px 7px 6px;
   }
   .portfolio__block_arts>img.focus_image{
-    width: 141px;
-    height: 117px;
+    width: 42.2%;
+    height: 20.5%;
   }
   .about_us{
     overflow-x: hidden;
