@@ -46,6 +46,8 @@ document.addEventListener('scroll', scrollListen = (event)=>{
 const asideItemActive  = (event) =>{
   document.querySelectorAll('.aside__item').forEach(item => item.style.color='');
   event.preventDefault();
+  document.getElementById('hamburger').classList.remove('rotate');
+  document.getElementById('aside').classList.add('hidden');
    let id = event.target.getAttribute('href').substr(1);
    document.getElementById(id).scrollIntoView({
       behavior: 'smooth',
