@@ -847,7 +847,7 @@ input[value=OK]{
     display: block;
     position: fixed;
     width: 73%;
-    height: 812px;
+    height: 100vh;
     background: #2D303A;
     box-shadow: 0px -40px 20px rgba(0, 0, 0, 0.4);
     z-index: 100;
